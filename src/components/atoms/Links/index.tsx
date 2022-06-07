@@ -10,7 +10,7 @@ const Links: FC<Props> = (props) => {
   const { menu, url } = props;
 
   return (
-    <Link to={url} className="mx-1">
+    <Link to={url} className="mx-2">
       {menu}
     </Link>
   );

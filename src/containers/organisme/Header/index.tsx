@@ -3,6 +3,7 @@ import Title from "../../../components/atoms/Title";
 import SubTitle from "../../../components/atoms/SubTitle";
 import ButtonPrimary from "../../../components/atoms/ButtonPrimary";
 import ButtonSecondary from "../../../components/atoms/ButtonSecondary";
+import Menu from "../Menu";
 
 type Props = {
   title: string;
@@ -21,15 +22,17 @@ export const Header = (props: Props) => {
         <Title title={props.title} />
         <SubTitle subtitle={props.subtitle} />
       </div>
-      <div className="flex-1 text-right">
-        <ButtonPrimary
-          textButton={props.textButton}
-          link_to={props.link_login}
-        />
-        <ButtonSecondary
-          textButton={props.textButton2nd}
-          link_to={props.link_register}
-        />
+      <div className="flex-1 items-center justify-center">
+        <div className="text-right">
+          <ButtonPrimary
+            textButton={props.textButton}
+            link_to={props.link_login}
+          />
+          <ButtonSecondary
+            textButton={props.textButton2nd}
+            link_to={props.link_register}
+          />
+        </div>
       </div>
     </div>
   );
