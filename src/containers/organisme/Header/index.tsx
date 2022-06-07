@@ -9,19 +9,27 @@ type Props = {
   subtitle?: string;
   login?: boolean;
   textButton: string;
-  textButton2nd?: string;
+  textButton2nd: string;
+  link_login: string;
+  link_register: string;
 };
 
 export const Header = (props: Props) => {
   return (
-    <div className="py-2 bg-slate-100 mb-8 flex justify-between items-center">
+    <div className="py-2 px-4 -mx-4 pb-4 bg-gray-800 flex justify-between items-center rounded-b-xl">
       <div className="flex-none">
         <Title title={props.title} />
         <SubTitle subtitle={props.subtitle} />
       </div>
       <div className="flex-1 text-right">
-        <ButtonPrimary textButton={props.textButton} />
-        <ButtonSecondary textButton={props.textButton2nd} />
+        <ButtonPrimary
+          textButton={props.textButton}
+          link_to={props.link_login}
+        />
+        <ButtonSecondary
+          textButton={props.textButton2nd}
+          link_to={props.link_register}
+        />
       </div>
     </div>
   );

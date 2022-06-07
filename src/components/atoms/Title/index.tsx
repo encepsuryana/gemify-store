@@ -1,12 +1,17 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./title.sass";
 
 type Props = {
   title: string;
 };
 
-export const Title = (props: Props) => {
-  return <h1 className="text-blue-900 font-bold text-3xl">{props.title}</h1>;
+const Title = (props: Props) => {
+  return (
+    <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-yellow-600 font-bold text-3xl">
+      <Link to="/">{props.title}</Link>
+    </h1>
+  );
 };
 
 export default Title;

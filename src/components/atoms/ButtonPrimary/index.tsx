@@ -1,13 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 type Props = {
   textButton: string;
+  link_to: string;
 };
 
-export const ButtonPrimary = (props: Props) => {
+const ButtonPrimary = (props: Props) => {
   return (
-    <button className="mx-1 bg-orange-500 text-white py-1 px-5 rounded-full text-sm font-bold pb-1.5 hover:bg-orange-600">
-      {props.textButton}
+    <button className="mx-1 bg-gradient-to-r from-yellow-500 to-yellow-600 text-gray-800 py-1 px-5 rounded-full text-sm font-bold pb-1.5">
+      <Link to={props.link_to}>{props.textButton}</Link>
     </button>
   );
 };

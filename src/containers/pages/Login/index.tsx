@@ -1,9 +1,15 @@
 import React from "react";
+import Seo from "../../../utils/Seo";
 
 type Props = {};
 
-export const Login = (props: Props) => {
-  return <div>Login</div>;
+const Login = (props: Props) => {
+  return (
+    <div>
+      <Seo title="Login" />
+      <h1>Halaman Login</h1>
+    </div>
+  );
 };
 
 export default Login;
