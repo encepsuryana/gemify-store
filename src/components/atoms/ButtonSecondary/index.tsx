@@ -8,9 +8,11 @@ type Props = {
 
 const ButtonSecondary = (props: Props) => {
   return (
-    <button className="mx-1 border border-yellow-500 text-yellow-500 py-1 px-5 rounded-full text-sm font-bold pb-1.5 hover:bg-gradient-to-r from-yellow-500 to-yellow-600  hover:text-gray-800">
-      <Link to={props.link_to}>{props.textButton}</Link>
-    </button>
+    <Link to={props.link_to}>
+      <button className="mx-1 border border-yellow-500 text-yellow-500 py-1 px-5 rounded-full text-sm font-bold pb-1.5 hover:bg-gradient-to-r from-yellow-500 to-yellow-600  hover:text-gray-800">
+        {props.textButton}
+      </button>
+    </Link>
   );
 };
 

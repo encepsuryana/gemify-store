@@ -21,7 +21,7 @@ function App() {
         textButton="Login"
         textButton2nd="Register"
       />
-      <Menu title="menu" />
+      <Menu />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<Login />} />
