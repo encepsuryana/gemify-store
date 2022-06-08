@@ -1,38 +1,40 @@
-import React from "react";
+import React, { FC } from "react";
 import Title from "../../../components/atoms/Title";
 import SubTitle from "../../../components/atoms/SubTitle";
-import ButtonPrimary from "../../../components/atoms/ButtonPrimary";
-import ButtonSecondary from "../../../components/atoms/ButtonSecondary";
-import Menu from "../Menu";
+import Account from "../../../components/molecules/Account";
 
-type Props = {
+interface Props {
   title: string;
   subtitle?: string;
   login?: boolean;
-  textButton: string;
-  textButton2nd: string;
-  link_login: string;
-  link_register: string;
-};
+  textLogin: string;
+  textRegister: string;
+  linkLogin: string;
+  linkRegister: string;
+}
 
-export const Header = (props: Props) => {
+const Header: FC<Props> = ({
+  title,
+  subtitle,
+  login,
+  textLogin,
+  textRegister,
+  linkLogin,
+  linkRegister,
+}) => {
   return (
     <div className="py-2 px-4 -mx-4 pb-4 bg-gray-800 flex justify-between items-center rounded-b-xl">
       <div className="flex-none">
-        <Title title={props.title} />
-        <SubTitle subtitle={props.subtitle} />
+        <Title title={title} />
+        <SubTitle subtitle={subtitle} />
       </div>
       <div className="flex-1 items-center justify-center">
-        <div className="text-right">
-          <ButtonPrimary
-            textButton={props.textButton}
-            link_to={props.link_login}
-          />
-          <ButtonSecondary
-            textButton={props.textButton2nd}
-            link_to={props.link_register}
-          />
-        </div>
+        <Account
+          loginText={textLogin}
+          loginUrl={linkLogin}
+          registerText={textRegister}
+          registerUrl={linkRegister}
+        />
       </div>
     </div>
   );

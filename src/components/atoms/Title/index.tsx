@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./title.sass";
 
 type Props = {
   title: string;

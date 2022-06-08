@@ -13,14 +13,14 @@ function App() {
   return (
     <div className="container mx-auto max-w-xl">
       <Header
-        link_login="/login"
-        link_register="/register"
+        linkLogin="/login"
+        linkRegister="/register"
         title="Gemify Store"
         subtitle="Website topup Game, tercepat dan terpercaya."
-        textButton="Login"
-        textButton2nd="Register"
+        textLogin="Login"
+        textRegister="Register"
       />
-      <Menu  />
+      <Menu />
 
       <Routes>
         <Route path="/" element={<HomePage />} />

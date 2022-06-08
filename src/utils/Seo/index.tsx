@@ -1,9 +1,9 @@
-import React from "react";
+import React, { FC } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import icon from "../../assets/logo/icon.png";
 
-type Props = {
+interface Props {
   title?: string;
   description?: string;
   robot?: string;
@@ -17,25 +17,23 @@ type Props = {
   twitter_card?: string;
   twitter_site?: string;
   twitter_creator?: string;
-};
+}
 
-const Seo = (props: Props) => {
-  //Props
-  const {
-    title,
-    pav_icon,
-    description,
-    robot,
-    canonical,
-    locale,
-    type,
-    site_name,
-    image,
-    twitter_username,
-    twitter_card,
-    twitter_site,
-  } = props;
-
+const Seo: FC<Props> = ({
+  title,
+  description,
+  robot,
+  canonical,
+  locale,
+  pav_icon,
+  type,
+  site_name,
+  image,
+  twitter_username,
+  twitter_card,
+  twitter_site,
+  twitter_creator,
+}) => {
   //set default value
   const defaultProps = {
     title: "Gemify Store - Website topup Game, tercepat dan terpercaya.",
