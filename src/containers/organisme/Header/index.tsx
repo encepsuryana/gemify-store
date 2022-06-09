@@ -23,7 +23,7 @@ const Header: FC<Props> = ({
   linkRegister,
 }) => {
   return (
-    <div className="py-2 px-4 -mx-4 pb-4 bg-gray-800 flex justify-between items-center rounded-b-xl">
+    <div className="py-2 px-4 pb-4 -mx-4 bg-gray-800 flex justify-between items-center rounded-b-xl">
       <div className="flex-none">
         <Title title={title} />
         <SubTitle subtitle={subtitle} />

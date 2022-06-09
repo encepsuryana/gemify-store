@@ -9,7 +9,7 @@ import User from "../User";
 import Header from "../../organisme/Header";
 import Menu from "../../organisme/Menu";
 
-function App() {
+const App = () => {
   return (
     <div className="container mx-auto max-w-xl">
       <Header
@@ -31,6 +31,6 @@ function App() {
       </Routes>
     </div>
   );
-}
+};
 
 export default App;

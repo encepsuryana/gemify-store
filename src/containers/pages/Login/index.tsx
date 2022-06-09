@@ -1,15 +1,9 @@
-import React from "react";
-import Seo from "../../../utils/Seo";
+import React, { FC } from "react";
 
-type Props = {};
+interface Props {}
 
-const Login = (props: Props) => {
-  return (
-    <div>
-      <Seo title="Login" />
-      <h1>Halaman Login</h1>
-    </div>
-  );
+const Login:FC<Props> = ({}) => {
+  return <div> Login</div>;
 };
 
 export default Login;

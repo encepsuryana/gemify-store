@@ -1,8 +1,8 @@
-import React from "react";
+import React, { FC } from "react";
 
-type Props = {};
+interface Props {}
 
-const Cart = (props: Props) => {
+const Cart:FC<Props> = ({}) => {
   return <div> Cart</div>;
 };
 

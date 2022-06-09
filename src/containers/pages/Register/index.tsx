@@ -1,9 +1,9 @@
-import React from "react";
+import React, { FC } from "react";
 
-type Props = {};
+interface Props {}
 
-const Register = (props: Props) => {
-  return <div>Register</div>;
+const Register: FC<Props> = ({}) => {
+  return <div> Register</div>;
 };
 
 export default Register;

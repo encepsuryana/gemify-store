@@ -1,9 +1,9 @@
-import React from "react";
+import React, { FC } from "react";
 
-type Props = {};
+interface Props {}
 
-const User = (props: Props) => {
-  return <div>User</div>;
+const User: FC<Props> = ({}) => {
+  return <div> User</div>;
 };
 
 export default User;

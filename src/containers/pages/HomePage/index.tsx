@@ -1,9 +1,9 @@
-import React from "react";
+import React, { FC } from "react";
 import Seo from "../../../utils/Seo";
 
 type Props = {};
 
-const HomePage = (props: Props) => {
+const HomePage: FC<Props> = ({}) => {
   return (
     <div>
       <Seo
