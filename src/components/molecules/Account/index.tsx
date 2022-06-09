@@ -20,7 +20,7 @@ const Account: FC<Props> = ({
   user,
 }) => {
   return (
-    <div className="text-right">
+    <div>
       <ButtonPrimary textButton={loginText} link_to={loginUrl} />
       <ButtonSecondary textButton={registerText} link_to={registerUrl} />
     </div>

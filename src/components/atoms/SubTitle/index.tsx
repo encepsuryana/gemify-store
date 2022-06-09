@@ -5,7 +5,11 @@ type Props = {
 };
 
 const SubTitle: FC<Props> = ({ subtitle }) => {
-  return <p className="ml-1 mt-1 text-yellow-600 text-sm">{subtitle}</p>;
+  return (
+    <p className="ml-1 mb-1 text-yellow-600 text-sm leading-relaxed mr-4 whitespace-nowrap">
+      {subtitle}
+    </p>
+  );
 };
 
 export default SubTitle;
